@@ -35,7 +35,7 @@ Convert::Convert(ros::NodeHandle& nh, ros::NodeHandle& nh_local)
 void Convert::readParams()
 {
     nh_local_.param<string>("rslidar_topic", rslidar_topic_, "rslidar_points");
-    nh_local_.param<string>("velodyne_topic", velodyne_topic_, "converted_velodyne_points");
+    nh_local_.param<string>("velodyne_topic", velodyne_topic_, "velodyne_points");
 }
 
 void Convert::callback(const sensor_msgs::PointCloud2ConstPtr& cloud)
